@@ -18,3 +18,4 @@ while True:
         classes.ContactList.deletePerson()
     else:
         exit
+
