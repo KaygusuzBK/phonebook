@@ -8,10 +8,6 @@ class Person():
         fullName = self.name + ' ' + self.surname
         return fullName
 
-    def addToPerson(self):
-        ContactList.addToList(self)
-        ContactList.listItems()
-
 class PersonList():
     def __init__(self):
         self.personList = []
@@ -36,4 +32,4 @@ class PersonList():
 ContactList = PersonList()
 
 p1 = Person()
-p1.addToPerson()
+ContactList.addToList(p1)

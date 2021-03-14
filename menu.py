@@ -11,7 +11,7 @@ while True:
     choose = input("Please Choose Your Option: ")
     if choose == "1":
         Person = classes.Person()
-        Person.addToPerson()
+        classes.ContactList.addToList()
     elif choose == "2" :
         classes.ContactList.listItems()
     elif choose == "3" :
