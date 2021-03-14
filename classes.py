@@ -24,13 +24,13 @@ class PersonList():
             print(item.name, item.surname, item.phoneNumber )
 
     def deletePerson(self):        
-        deletePersonName = input("Silmek istediğiniz ismi giriniz: ")
+        deletePersonName = input("Enter the name to be deleted: ")
         for item in ContactList.personList:
             if  deletePersonName == item.name:
                 ContactList.personList.remove(item)
                 return
             else:
-                print("Kişi bulunamadı")
+                print("No person found.")
                 return
 
 ContactList = PersonList()

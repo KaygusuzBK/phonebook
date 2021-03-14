@@ -5,8 +5,10 @@ while True:
     2) List Contact
     3) Delete Person
 
+    Plase enter any key to exit...
     """)
 
+    choose = input("Please Choose Your Option: ")
     if choose == "1":
         Person = classes.Person()
         Person.addToPerson()
