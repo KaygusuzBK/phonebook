@@ -29,7 +29,7 @@ class PersonList():
                 print("No person found.")
                 return
 
-    def searchPerson(self, message ="Enter a edit name: "):
+    def searchPerson(self, message = "Enter a edit name: "):
         ContactList.deletePerson(message)
         person = Person()
         ContactList.addToList(person)
