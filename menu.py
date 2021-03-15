@@ -4,6 +4,7 @@ while True:
     1) Add Contact
     2) List Contact
     3) Delete Person
+    4) Edit Person
 
     Plase enter any key to exit...
     """)
@@ -16,5 +17,7 @@ while True:
         classes.ContactList.listItems()
     elif choose == "3" :
         classes.ContactList.deletePerson()
+    elif choose == "4":
+        classes.ContactList.searchPerson("Enter a edit name: ")
     else:
         exit
