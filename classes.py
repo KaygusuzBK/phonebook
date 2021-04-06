@@ -1,6 +1,6 @@
 class Person():
     def __init__(self):
-        self.name = input("Enter a name: ")
+        self.name = input("Enter a name:    ")
         self.surname = input("Enter a surname: ")
         self.phoneNumber = input("Enter a phonenumber: ")
     
@@ -17,8 +17,18 @@ class PersonList():
 
     def listItems(self):
         for item in self.personList:
-            print(item.name, item.surname, item.phoneNumber )
-
+            print(item.name, item.surname, item.phoneNumber)
+        with open("phonebook.txt","a",encoding="utf-8") as file:
+            file.write(" ")
+            file.write(item.name) 
+            file.write(" ")
+            file.write(item.surname)
+            file.write(" ")
+            file.write(item.phoneNumber)
+            file.write("\n")
+            
+  
+            
     def deletePerson(self, message = "delete person:"):
         deletePersonName = input(message)
         for item in ContactList.personList:
