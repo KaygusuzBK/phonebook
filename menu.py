@@ -20,4 +20,4 @@ while True:
     elif choose == "4":
         classes.ContactList.searchPerson("Enter a edit name: ")
     else:
-        exit
+        break
